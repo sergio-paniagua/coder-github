@@ -1,0 +1,743 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    box-shadow: none;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    background-color: rgba(253, 253, 253, 0.8)
+}
+a:hover {
+    background-color: rgba(22, 67, 20, 0.8)
+}
+
+button {
+    padding: 4px 15px;
+    background-color: rgb(207, 223, 200);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* ............................GRID INDEX........................................................... */
+.container {  display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.4fr 2.5fr 2.5fr 0.7fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "lab legal"
+      "cultivo medicinal"
+      "footer footer";
+      background-image: url(../Img/fondoheader.jpeg);
+      background-size: cover;
+      width: 100vw;
+
+  }
+/* ------------------------------------HEADER----------------------------- */ 
+.header { grid-area: header; 
+width: 100vw;
+background-color: white;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.logoNom{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.logo{
+
+}
+ .nombre{
+    
+ }
+
+ .navBar{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+ }
+
+ .listNav{
+     margin: 10px;
+
+ }
+
+/* ------------------------------------SECCION LABORATORIO----------------------------- */
+  .lab {grid-area: lab;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 50vw;
+    height: 100%;
+
+ }
+
+ .titLab{ 
+    font-size: 100%;   
+}
+.img1{
+    width:40%;
+}
+
+ /* ------------------------------------SECCION LEGAL----------------------------- */ 
+  .legal { grid-area: legal; 
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 50vw;
+    height: 100%;
+
+}
+
+.titLeg{ 
+    font-size: 100%;   
+}
+.img2{
+    width:40%;
+}
+ /* ------------------------------------SECCION CULTIVO----------------------------- */ 
+  .cultivo { grid-area: cultivo; 
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 50vw;
+    height: 100%;
+
+}
+
+.titCul{ 
+    font-size: 100%;   
+}
+.img3{
+    width:40%;
+}
+
+ /* ------------------------------------SECCION MEDICINAL----------------------------- */ 
+    .medicinal { grid-area: medicinal; 
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 50vw;
+    height: 100%;
+   
+    }
+
+    .titMed{ 
+        font-size: 100%;   
+    }
+    .img4{
+    
+        width:40%;
+    }
+
+
+ /* ------------------------------------FOOTER----------------------------- */ 
+  .footer { grid-area: footer; 
+    background-image: url(./Img/FondoFooter.webp);
+    width: 100vw;
+   
+}
+ 
+.footer{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.imgF{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px;
+}
+
+.derechosF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+/* Enlaces (a) de las redes sociales */
+.aImgF{
+    width: 3%;
+}
+
+.aImgLn{
+    width: 3%;
+}
+/* Logos de las redes sociales (ocupan el 100% de a)*/
+.imgFace{
+    width: 100%;
+}
+ 
+.imgLn{
+    width: 100%;
+}
+/* --------------------------------------PAGES------------------------------------------------------- */
+/* ---------------------------------- GRID LABORATORIO -------------------------------------------*/
+
+.containerLab {  
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.5fr 0.2fr 5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "titulo titulo"
+      "main main"
+      "footer footer";
+      background-color:rgb(223, 250, 223);
+      background-size: cover;
+  }
+
+  .header { grid-area: header;
+    width: 100%;
+    height: 100%;
+
+}
+  .titulo { grid-area: titulo;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: black;
+}
+  .main { grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+  
+}
+  .footer { grid-area: footer;
+
+}
+  
+  /* SECCION DE TITULO */
+
+  .titulo{
+      border: solid orange;
+
+  }
+/* SECCIONES DEL MAIN */
+  .potencia{
+      display: flex;
+      flex-direction: column;
+      border: solid 2px red;
+      justify-content: space-between;
+  }
+  .pot{
+      margin: 10px;
+  }
+  .textPot{
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+
+  /* logo analisis */
+  .potT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.imgLab{
+    width: 30%;
+    height: 30%;
+}
+  .terpenos{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px red;
+    justify-content: space-between;
+}
+
+.ter{
+    margin: 10px;
+}
+.textTer{
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+.terT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.agroquimicos{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px red;
+    justify-content: space-between;
+}
+
+.agro{
+    margin: 10px;
+}
+.textAgro{
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.agroT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metales{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px red;
+    justify-content: space-between;
+}
+
+.met{
+    margin: 10px;
+}
+.textMet{
+  word-spacing: 15px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.metT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    border: solid;
+    align-items: center;
+    margin: 2px;
+}
+
+/* ----------------------------------------------GRID SOBRE NOSOTROS ------------------------------------*/
+.containerNosotros {  
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.2fr 0.2fr 5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "titulo titulo"
+      "mainNosotros mainNosotros"
+      "footer footer";
+      background-color:rgb(223, 250, 223);
+      background-size: cover;
+      width: 100vw;
+     
+  }
+  .header { grid-area: header;
+    width: 100vw;
+    height: 100%;
+    
+
+}
+  .titulo { grid-area: titulo;
+    width: 100vw;
+    padding: 10px;
+ 
+}
+  .mainNosotros { grid-area: mainNosotros;
+    height: 100%;
+    width: 100vw;
+ 
+    
+}
+  .footer { grid-area: footer;
+    width: 100vw;
+    height: 100%;
+
+}
+
+.seccionMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.textoNos{
+    border: solid 10px white;
+    padding: 15px;
+    margin: 50px;
+    width: 30%;
+    height: 60%;
+    overflow:scroll;
+  
+}
+ .imgNos{
+     padding: 15px;
+     margin: 50px;
+     width: 50%;
+     height: 70%;
+    
+ }
+
+/* ---------------------------------------------- GRID RESULTADOS ------------------------------------*/
+.containerResultdos {  
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.2fr 0.2fr 5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "titulo titulo"
+      "mainResultados mainResultados"
+      "footer footer";
+      background-color:rgb(223, 250, 223);
+      background-size: cover;
+      width: 100vw;
+     
+  }
+  .header { grid-area: header;
+    width: 100vw;
+    height: 100%;
+    
+
+}
+  .titulo { grid-area: titulo;
+    width: 100vw;
+    padding: 5px;
+ 
+}
+  .mainResultados { grid-area: mainResutados;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+ 
+}
+  .footer { grid-area: footer;
+    width: 100vw;
+    height: 100%;
+  }
+
+.titulo4{
+    text-align: center;
+}
+
+.contenedorForm{
+    height: 70vh;
+    width: 50%;
+    padding: 10px;
+}
+
+.formulario4{
+    border-radius: 5px;
+    border: solid blue;
+    text-align: center;
+    padding: 20px;
+    background-color: aquamarine;
+
+}
+.formMuestra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    margin: 10px;
+}
+
+.muestra{
+    margin: 10px;
+}
+
+/* ---------------------------------------------- GRID CONTACTO ------------------------------------*/
+
+.containerContacto {  
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.2fr 0.2fr 5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "titulo titulo"
+      "mainContacto mainContacto"
+      "footer footer";
+      background-color:rgb(0, 15, 5);
+      background-size: cover;
+      width: 100vw;
+     
+  }
+  .header { grid-area: header;
+    width: 100vw;
+    height: 100%;
+    
+
+}
+  .titulo { grid-area: titulo;
+    width: 100vw;
+    padding: 5px;
+    color: white;
+ 
+}
+  .mainContacto { grid-area: mainContacto;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(29, 31, 28);
+ 
+}
+  .footer { grid-area: footer;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .seccion3{
+      display: flex;
+      align-items: center;
+     
+      
+  }
+
+  .formulario3{
+    border-radius: 5px;
+    border: solid rebeccapurple;
+    text-align: center;
+    padding: 20px;
+    background-color: yellowgreen;
+    width: 40vw;
+    }
+
+    .dat{
+        width: 100%;
+        border: solid 2px greenyellow;
+    }
+
+/* ............................MEDIA QUERYS........................................................... */
+/* --------------------------INDEX---------------------- */
+@media (max-width: 785px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoNom{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 610px){
+   
+.container {  display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 1.4fr 0.7fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header"
+      "lab" 
+      "legal"
+      "cultivo" 
+      "medicinal"
+      "footer";
+      background-image: url(../Img/fondoheader.jpeg);
+      background-size: cover;
+  }
+
+  .lab {grid-area: lab;
+    border: solid yellow;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 100vw;
+
+ }
+
+ .titLab{ 
+    border: solid olivedrab;
+    font-size: 60%;   
+}
+.img1{
+    border: solid red;
+    width:60%;
+}
+
+.legal { grid-area: legal; 
+    border: solid black;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 100vw;
+
+}
+
+.titLeg{ 
+    border: solid olivedrab;
+    font-size: 60%;   
+}
+.img2{
+    border: solid red;
+    width: 60%;
+}
+
+.cultivo { grid-area: cultivo; 
+    border: solid purple;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 100vw;
+
+}
+
+.titCul{ 
+    border: solid olivedrab;
+    font-size: 60%;   
+}
+.img3{
+    border: solid red;
+    width: 60%;
+}
+
+.medicinal { grid-area: medicinal; 
+    border: solid orange;
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    justify-items: center;
+    width: 100vw;
+   
+    }
+
+    .titMed{ 
+        border: solid olivedrab;
+        font-size: 60%;   
+    }
+    .img4{
+        border: solid red;
+        width:60%;
+    }
+}
+
+/* ............................MEDIA QUERYS........................................................... */
+/* --------------------------LABORATORIO---------------------- */
+@media (max-width: 650px){
+    .main { grid-area: main;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        border: solid palevioletred;
+    }
+
+/* SECCIONES DEL MAIN */
+  p{
+      margin: 10px;
+  }
+
+  .containerLab {  
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 0.2fr 0.1fr 5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header"
+      "titulo titulo"
+      "main main"
+      "footer footer";
+      background-color:rgb(223, 250, 223);
+      background-size: cover;
+  }
+
+}
+
+
+/* ............................MEDIA QUERYS........................................................... */
+/* --------------------------SOBRE NOSOTROS---------------------- */
+@media (max-width: 785px){
+   
+    .seccionMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between
+        
+    }
+    
+    .textoNos{
+        border: solid 10px white;
+        padding: 10px;
+        margin: 50px;
+        width: 100%;
+        height: 70%;
+        overflow:scroll;
+
+      
+    }
+     .imgNos{
+         margin: 50px;
+         width: 60%;
+       
+        
+     }
+    
+}
+/* ............................MEDIA QUERYS........................................................... */
+/* --------------------------RESULTADOS---------------------- */
+@media (max-width: 785px){
+.formulario4{
+    border-radius: 5px;
+    border: solid blue;
+    text-align: center;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 150%;
+}
+}
+
