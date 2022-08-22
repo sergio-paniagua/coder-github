@@ -576,7 +576,7 @@ input:focus{
 
 h2{
     animation-name: efectoTitulo;
-    animation-duration: 5ms;
+    animation-duration: 10ms;
     animation-iteration-count: infinite;
 
 }
